@@ -1,0 +1,209 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+p, h1, h2, h3, h4 {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-Regular'),
+    url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-Medium'),
+    url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-SemiBold'),
+    url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-Bold'),
+    url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-ExtraBold'),
+    url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+:root {
+  --color-dark: #000;
+	--color-light: #fff;
+  --color-orange: #F90;
+	--gap: 32px;
+}
+
+body {
+  font-family: 'Monserrat', 'sans-serif';
+  font-weight: 400;
+  min-width: 320px;
+  background-color: #FFF;
+}
+
+
+.title {
+	color: #f0e7e7;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.section_offset {
+	padding: 50px 0;
+}
+
+.btn {
+	padding: 15px 40px;
+	border-radius: 16px;
+	background-color: #F90;
+	border: none;
+	color: #FFF;
+	text-align: center;
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.container {
+	max-width: 1270px;
+}
+
+/* header */
+.header {
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(181,110,25,1) 39%, rgba(134,55,11,1) 100%);}
+
+.container_header {
+	display: flex;
+	align-items: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.header__logo {
+	margin-right: 30px;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding-right: 10px;
+	margin-right: 20px;
+	border-right: 1px solid #a09999;
+}
+
+.header__tel {
+	margin-right: 40px;
+	font-weight: 400;
+	font-size: 18px;
+	color: #FFF;
+}
+
+.nav {
+	margin-right: auto;
+}
+
+.nav__list {
+	display: flex;
+	gap: 30px;
+}
+
+.link {
+	font-weight: 400;
+	font-size: 16px;
+	color: #FFF;
+}
+
+.enter-cabinet__link {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.enter-cabinet__link svg {
+	fill: #e0b937;
+}
+
+/* main */
+.main-section {
+	background: url('../img/main-1.jpg') no-repeat center / cover;
+}
+
+.container_main {
+	padding-top: 200px;
+	padding-bottom: 100px;
+}
+
+.main__inner {
+	max-width: 560px;
+}
+
+.main__title {
+	margin-bottom: 12px;
+	font-size: 32px;
+	font-weight: 800;
+	color: #FFF;
+}
+
+.main__descr {
+	margin-bottom: 50px;
+	color: #FFF;
+}
+
+/* Область применения */
+.application-aria {
+	background-color: #3b3838;
+	
+	height: 800px;
+}
