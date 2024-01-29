@@ -96,6 +96,7 @@ body {
 
 
 .title {
+	margin-bottom: 50px;
 	color: #f0e7e7;
 	text-align: center;
 	font-size: 28px;
@@ -103,7 +104,7 @@ body {
 }
 
 .section_offset {
-	padding: 50px 0;
+	padding-top: 70px;
 }
 
 .btn {
@@ -409,7 +410,26 @@ body {
 
 /* Область применения */
 .application-aria {
-	background-color: #3b3838;
+	background-color: #403838;
 	
 	height: 800px;
+}
+
+.application-aria__list {
+	display: flex;
+	row-gap: 30px;
+}
+
+.application__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	min-height: 300px;
+	padding: 20px;
+	border: 1px solid #f0e7e7;
+	border-radius: 16px;
+}
+
+.application-aria__subtitle {
+	margin-bottom: 20px;
 }
