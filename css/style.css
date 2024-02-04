@@ -1,4 +1,5 @@
 @import '../node_modules/animate.css/animate.css';
+@import '../node_modules/swiper/swiper.min.css';
 
 html {
   box-sizing: border-box;
@@ -96,7 +97,7 @@ body {
 
 
 .title {
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 	color: #f0e7e7;
 	text-align: center;
 	font-size: 28px;
@@ -104,7 +105,7 @@ body {
 }
 
 .section_offset {
-	padding-top: 70px;
+	padding: 80px 0;
 }
 
 .btn {
@@ -140,7 +141,13 @@ body {
 
 /* header */
 .header {
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(181,110,25,1) 39%, rgba(134,55,11,1) 100%);}
+	/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(181,110,25,1) 39%, rgba(134,55,11,1) 100%); */
+	background-color: rgba(19, 18, 18, 0.8);
+	/* background-color: rgb(44, 43, 43,0.8); */
+	/* background-color: rgb(65, 64, 64); */
+	position: fixed;
+	width: 100%;
+}
 
 .container_header {
 	display: flex;
@@ -365,6 +372,7 @@ body {
 
 .enter-cabinet__link svg {
 	fill: #e0b937;
+	fill: #c6c0bb;
 	transition: fill 0.4s ease-in-out;
 }
 
@@ -411,10 +419,11 @@ body {
 /* Область применения */
 .application-aria {
 	background-color: #403838;
-	
-	height: 800px;
+	background: linear-gradient(180deg, rgb(64, 56, 56) 10%, rgb(234, 234, 234) 100%);
+	background: linear-gradient(180deg, rgb(64, 56, 56) 12%, rgb(216, 211, 211) 100%);
+	background: linear-gradient(180deg, rgb(64, 56, 56) 12%, rgb(174, 168, 168) 100%);
 }
-
+/* background-color: #eaeaea; */
 .application-aria__list {
 	display: flex;
 	row-gap: 30px;
@@ -432,4 +441,97 @@ body {
 
 .application-aria__subtitle {
 	margin-bottom: 20px;
+	color: white;
+}
+
+.application-aria__descr {
+	color: white;
+}
+
+/* popular */
+.popular-gobo {
+	background: #1f1e1e;
+}
+
+.swiper-slide {
+	color: #FFF;
+}
+
+.popular-gobo__name {
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.popular-gobo__price {
+	margin-bottom: 25px;
+	font-size: 32px;
+	font-weight: 800;
+}
+
+.popular-gobo__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	max-width: 582px;
+	margin-bottom: 30px;
+}
+
+.popular-gobo__item {
+	display: flex;
+	align-items:flex-start;
+	font-size: 16px;
+	line-height: 120%;
+}
+
+.popular-gobo__item::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	flex-shrink: 0;
+	margin-right: 10px;
+	background: url('../img/galochka.png') no-repeat center / cover;
+	transform: translateY(-3px);
+}
+
+.popular-gobo__features {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 50px;
+}
+
+.feature__name {
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.feature__descr {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+
+.swiper {
+	max-width: 1500px;
+	margin-bottom: 30px;
+}
+
+.swiper-pagination {
+	position: static;
+}
+
+.swiper-pagination-bullet {
+	background-color: #FFF;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: #FFF;
+}
+
+/* advantages */
+.advantages {
+	color: #FFF;
+	height: 800px;
 }
