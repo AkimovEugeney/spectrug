@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script defer src="inputmask.min.js"></script>
 	<script defer type="module" src="main.js"></script>
 </head>
 
@@ -171,7 +172,7 @@
 								<p class="feature__descr">2 года</p>
 							</div>
 						</div>
-						<button>Заказать</button>
+						<button class="popular__btn">Заказать</button>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -201,7 +202,7 @@
 								<p class="feature__descr">2 года</p>
 							</div>
 						</div>
-						<button>Заказать</button>
+						<button class="popular__btn">Заказать</button>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -231,7 +232,7 @@
 								<p class="feature__descr">2 года</p>
 							</div>
 						</div>
-						<button>Заказать</button>
+						<button class="popular__btn">Заказать</button>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -261,7 +262,7 @@
 								<p class="feature__descr">2 года</p>
 							</div>
 						</div>
-						<button>Заказать</button>
+						<button class="popular__btn">Заказать</button>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -291,7 +292,7 @@
 								<p class="feature__descr">2 года</p>
 							</div>
 						</div>
-						<button>Заказать</button>
+						<button class="popular__btn">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -302,8 +303,73 @@
 			<div class="swiper-pagination"></div>
 		</section>
 		<section class="advantages section_offset">
-			<div class="container"></div>
+			<div class="container">
+				<h2 class="title advantages__title">Приемущества гобо-проекторов</h2>
+				<p class="advantages__descr">Гобо-проектор&nbsp;&mdash; лучшее решение для рекламы Вашего бизнеса!</p>
+				<ul class="row advantages__list">
+					<li class="advantages__item col-3">
+						<article class="advantage advantage_icon-1">
+								<h3 class="advantage__name">Возможность проецировать на любую поверхность</h3>
+							<p class="advantage__descr">
+								Фасады зданий, асфальт, трава, деревья, водная гладь! А также внутри помещений, магазинах, складах, сцене
+							</p>
+						</article>
+					</li>
+					<li class="advantages__item col-3">
+						<article class="advantage advantage_icon-2">
+								<h3 class="advantage__name">Любой масштаб проекции и легкая замена слайдов</h3>
+							<p class="advantage__descr">
+								Масштаб изображения меняется в зависимости от проекционного расстояния. Возможность полноцветной печати гобо-линз.
+							</p>
+						</article>
+					</li>
+					<li class="advantages__item col-3">
+						<article class="advantage advantage_icon-3">
+								<h3 class="advantage__name">Простая настройка оборудования</h3>
+							<p class="advantage__descr">
+								Просто установите проектор напротив места демонстрации, включите и наслаждайтесь результатом.
+							</p>
+						</article>
+					</li>
+					<li class="advantages__item col-3">
+						<article class="advantage advantage_icon-4">
+								<h3 class="advantage__name">Не требуется разрешение на установку</h3>
+							<p class="advantage__descr">
+								Гобо-проектор не является рекламной конструкцией, а потому, не требует специального разрешения.
+							</p>
+						</article>
+					</li>
+				</ul>
+			</div>
 		</section>
+		<section class="consultation section_offset">
+			<div class="container">
+				<div class="cosultation__wrapp">
+						<h2 class="consultation__title">Получите консультацию для подбора проектора</h2>
+					<p class="consultation__descr">Наш менеджер свяжется с вами в течении рабочего дня.</p>
+					<form class="consultation__form" action="#!" method="post">
+						<div class="consultation__inner">
+							<div class="consultation__inputs">
+								<label class="consultation__label" for="">
+									ФИО:
+									<input class="consultation__input"  id="FIO" type="text" placeholder="Иванов Иван Иванович">
+								</label>
+								<label class="consultation__label" for="">
+									Номер телефона:
+									<input class="consultation__input consultation__input_number" id="number" type="tel" placeholder="+7 (___) ___-__-__">
+								</label>
+								</div>
+								<button class="btn consultation__button" type="submit">Получить консультацию</button>
+						</div>
+						<div class="conset">
+							<input class="consultation__checkbox" type="checkbox" id="consent">
+						<label class="consultation__conset" for="consent"> Согласие на обработку пресональных данных</label>
+						</div>
+					</form>
+					</div>
+			</div>
+		</section>
+		<section class="one"></section>
 	</main>
 </body>
 

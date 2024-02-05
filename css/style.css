@@ -100,7 +100,7 @@ body {
 	margin-bottom: 80px;
 	color: #f0e7e7;
 	text-align: center;
-	font-size: 28px;
+	font-size: 36px;
 	font-weight: 700;
 }
 
@@ -128,6 +128,7 @@ body {
 .btn:hover {
 	outline: none;
 	background-color: #FFB84D;
+	cursor: pointer;
 }
 
 .btn:active {
@@ -141,11 +142,9 @@ body {
 
 /* header */
 .header {
-	/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(181,110,25,1) 39%, rgba(134,55,11,1) 100%); */
 	background-color: rgba(19, 18, 18, 0.8);
-	/* background-color: rgb(44, 43, 43,0.8); */
-	/* background-color: rgb(65, 64, 64); */
 	position: fixed;
+	z-index: 999;
 	width: 100%;
 }
 
@@ -422,6 +421,7 @@ body {
 	background: linear-gradient(180deg, rgb(64, 56, 56) 10%, rgb(234, 234, 234) 100%);
 	background: linear-gradient(180deg, rgb(64, 56, 56) 12%, rgb(216, 211, 211) 100%);
 	background: linear-gradient(180deg, rgb(64, 56, 56) 12%, rgb(174, 168, 168) 100%);
+	background-color:  #F1F1F1;;
 }
 /* background-color: #eaeaea; */
 .application-aria__list {
@@ -530,8 +530,222 @@ body {
 	color: #FFF;
 }
 
+.popular__btn {
+	padding: 10px 20px;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 12px;
+	background-color: transparent;
+	cursor: pointer;
+	color: #FFF;
+	transition: color 0.3s ease-in, background-color 0.3s ease-in-out;
+}
+
+.popular__btn:focus {
+	background-color: #b9b9b9;
+	color: #000;
+}
+
+.popular__btn:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.popular__btn:active {
+	background-color: #b9b9b9;
+}
+
 /* advantages */
 .advantages {
+	background-color: #F1F1F1;
+}
+
+.advantages__title {
+	margin-bottom: 40px;
+	color: #000;
+}
+
+.advantages__descr {
+	margin-bottom: 80px;
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+	color: #000;
+}
+
+.advantages__item {
+	display: flex;
+}
+
+.advantage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 12px;
+}
+
+.advantage::before {
+	content: '';
+	width: 50px;
+	height: 50px;
+	margin-bottom: 25px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.advantage__name {
+	height: 80px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: #000;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.advantage__descr {
+	color: #757373;
+	line-height: 180%;
+}
+
+.advantage_icon-1::before {
+	background-image: url('../img/icon-projector.svg');
+}
+
+.advantage_icon-2::before {
+	background-image: url('../img/icon-scale.svg');
+}
+
+.advantage_icon-3::before {
+	background-image: url('../img/icon-setting.svg');
+}
+
+.advantage_icon-4::before {
+	background-image: url('../img/icon-disabled.svg');
+}
+
+/* consultation */
+.consultation {
+	background-color: #1f1e1e;;
+}
+
+.cosultation__wrapp {
+	position: relative;
+	z-index: 30;
+}
+
+.cosultation__wrapp.anim::after{
+	content: "";
+	position: absolute;
+	width: 240px;
+	height: 490px;
+	right: 0;
+	bottom: -79px;
+	background: url('../img/consultation-img.png') no-repeat center / cover;
+	z-index: -1;
+	animation: fadeInRight;
+	animation-duration: 1.5s;
+}
+
+
+.consultation__title {
+	max-width: 530px;
+	margin-bottom: 30px;
+	letter-spacing: 2px;
 	color: #FFF;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.consultation__descr {
+	margin-bottom: 30px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #FFF;
+}
+
+.consultation__inner {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 20px;
+}
+
+.consultation__inputs {
+	display: flex;
+	gap: 30px;
+}
+
+.consultation__label {
+	display: flex;
+	flex-direction: column;
+	color: #FFF;
+	gap: 8px;
+}
+
+.consultation__input {
+	padding: 12px;
+	border-radius: 8px;
+	background-color: #FFF;
+	border: 1px solid #999595;
+	font-size: 16px;
+}
+
+.consultation__button {
+	align-self: last baseline;
+	padding: 14px 18px;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.consultation__input_number {
+	min-width: 280px;
+}
+
+.conset {
+	display: flex;
+	align-items: center;
+}
+
+.consultation__checkbox {
+	appearance: none;
+	margin-right: 10px;
+	width: 16px;
+	height: 16px;
+	border: 1px solid rgb(190, 190, 190);
+	border-radius: 50px;
+}
+
+.consultation__checkbox:focus {
+	outline: none;
+	border: 1px solid #F90;
+}
+
+.consultation__checkbox:checked {
+	background-color: green;
+	border: none;
+}
+
+.consultation__conset {
+	padding-top: 2px;
+	font-size: 13px;
+	color: #FFF;
+}
+
+.consultation__conset:hover {
+	cursor: pointer;
+}
+
+.consultation__checkbox:hover {
+	cursor: pointer;
+}
+
+
+.one {
 	height: 800px;
+	background-color: #FFF;
 }
