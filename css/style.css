@@ -855,10 +855,14 @@ body {
 
 .accordion-button::before {
 	position: absolute;
-	content: "●";
-	padding-right: 10px;
+	content: "";
+	width: 7px;
+	height: 7px;
+	border-radius: 50px;
+	background-color: var(--color-light);
+	margin-right: 10px;
 	padding-bottom: 1px;
-	opacity: 0;
+	opacity: 1;
 	visibility: hidden;
 }
 
