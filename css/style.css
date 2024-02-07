@@ -124,7 +124,7 @@ body {
 	padding: 80px 0;
 }
 
-.btn {
+.btn__normal {
 	padding: 15px 40px;
 	border-radius: 16px;
 	background-color: var(--color-orange);
@@ -136,18 +136,18 @@ body {
 	transition: background-color 0.3s ease-in-out;
 }
 
-.btn:focus {
+.btn__normal:focus {
 	outline: none;
 	background-color: var(--color-orange-light);
 }
 
-.btn:hover {
+.btn__normal:hover {
 	outline: none;
 	background-color:var(--color-orange-light);
 	cursor: pointer;
 }
 
-.btn:active {
+.btn__normal:active {
 	outline: none;
 	background-color: var(--color-orange-dark);
 }
@@ -415,14 +415,14 @@ body {
 }
 
 .main__inner {
-	max-width: 560px;
+	max-width: 625px;
 	animation: bounceInLeft;
 	animation-duration: 1s;
 }
 
 .main__title {
 	margin-bottom: 12px;
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: 800;
 	color: var(--color-light);
 }
@@ -453,7 +453,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	min-height: 350px;
+	min-height: 380px;
 	padding: 20px;
 	border: 0.5px solid var(--color-dark);
 	border-radius: 16px;
@@ -479,6 +479,8 @@ body {
 .application-aria__subtitle {
 	margin-bottom: 15px;
 	color: var(--color-light);
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .application-aria__descr {
