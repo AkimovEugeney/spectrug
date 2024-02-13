@@ -1,0 +1,243 @@
+html {
+	width: 100%;
+	height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+p, h1, h2, h3, h4 {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-Regular'),
+    url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-Medium'),
+    url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-SemiBold'),
+    url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-Bold'),
+    url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: local('Monserrat-ExtraBold'),
+    url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Monserrat', 'sans-serif';
+  font-weight: 400;
+  min-width: 320px;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-black-body);
+}
+
+:root {
+	--color-orange-light: #FFB84D;
+	--color-orange: #F90;
+	--color-orange-dark:  #E1670E;
+	--color-gray: #c6c0bb;
+	--color-white-body: #F1F1F1;
+	--color-black-body: #1f1e1e;
+	--color-gray-btn: #b9b9b9;
+	--color-gray-descr: #757373;
+  --color-dark: #000;
+	--color-light: #fff;
+	--gap: 32px;
+}
+
+.authorization {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 0 20px;
+}
+
+.authorization__wrapp {
+	width: 510px;
+	height: 360px;
+	background-color: var(--color-white-body);
+	border-radius: 12px;
+}
+
+
+.authorization__title {
+	padding: 25px 0;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 1px solid #cfcfcf;
+	color: #3b3b3b;
+}
+
+.authorization__form {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 30px 40px 50px;
+}
+
+.authorization__input {
+	width: 100%;
+	padding: 15px 0;
+	padding-right: 55px;
+	padding-left: 52px;
+	border: none;
+	border-radius: 25px;
+	background-color: #e2e2e2;
+}
+
+.inputWithIcon:has(.authorization__input:focus) .icon__input {
+	fill: #36b0f7;
+}
+
+.authorization__input:focus {
+	border: none;
+	outline: none;
+	background-color: #d3d1d1;
+}
+	
+
+.inputWithIcon {
+	position: relative;
+}
+
+.inputWithIcon:hover .icon__input {
+	fill: #36b0f7;
+}
+
+
+.forgot-password {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	fill: #6e6d6d;
+	transition: fill 0.3s ease-in-out;
+}
+
+.forgot-password:hover {
+	fill: var(--color-black-body);
+}
+
+.icon__input {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+	fill: #6e6d6d;
+	transition: fill 0.3s ease-in-out;
+}
+
+.authorization__link-wrapp {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.authorization__link {
+	color:#36b0f7;
+	transition: color 0.3s ease-in-out;
+}
+
+.authorization__link:focus {
+	outline: none;
+	color:#000;
+}
+
+.authorization__link:hover {
+	color:#000;
+}
+
+.authorization__link:active {
+	outline: none;
+	color:#616364;
+}
+
+.authorization__btn {
+	padding: 10px 18px;
+	border: none;
+	background-color: #36b0f7;
+	color: var(--color-light);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.authorization__btn:focus {
+	outline: none;
+	background-color: #000;
+}
+
+.authorization__btn:hover {
+	background-color: #000;
+}
+
+.authorization__btn:active {
+	background-color: #616364;
+}
+
+.inputWithIcon {
+	position: relative;
+}
